@@ -1,0 +1,5 @@
+diagramme de cas d'utilisation:
+https://app.diagrams.net/
+
+diagramme de classe:
+https://app.diagrams.net/#Ldiagramme%20de%20classe
