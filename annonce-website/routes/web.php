@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AnounceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::resource('anounces', AnounceController::class);
+
+Route::middleware('auth','verified')->get('/', function () {
+    return view('layouts/app');
 });
+
+Route::get('add-anounce', [AnounceController::class, 'create']);
+Route::post('add-anounce', [AnounceController::class, 'store']);
+Route::get('/', [AnounceController::class, 'index']);
+Route::delete('delete-anounce/{id}', [AnounceController::class, 'destroy']);
+Route::get('edit-anounce/{id}', [AnounceController::class, 'edit']);
+Route::put('update-anounce/{id}', [AnounceController::class, 'update']);
+
+
+
+
+
+
