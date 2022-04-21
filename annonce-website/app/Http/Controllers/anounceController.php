@@ -65,7 +65,16 @@ class anounceController extends Controller
         return redirect()->back()->with('status','anounce Deleted Successfully');
     }
 
-
+    // public function search(Request $request){
+       
+    //     $search = $request->input('demande');
+    //     $anounce = anounce::query()
+    //                 ->where('type', 'LIKE', "%{$search}%")
+    //                 // ->orWhere('body', 'LIKE', "%{$search}%")
+    //                 ->get();
+    //                 $data = json_decode($anounce);
+    //                 return view('layouts/app',["data"=>$data]);
+    // }
 
 
 

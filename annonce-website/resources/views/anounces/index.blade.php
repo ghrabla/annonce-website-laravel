@@ -1,13 +1,16 @@
+@auth
 @foreach ($data as $item)
     <div class="container posts-content ">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center" >
             <div class="col-lg-6">
                 <div class="card mb-4">
                     <div class="card-body">
                         <div class="media mb-3">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="d-block ui-w-40 rounded-circle" alt="">
-                            <div class="media-body ml-3">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="d-block ui-w-40 rounded-circle" alt="">
+                            <div class="media-body ml-3 font-weight-bold">
+                                <div class="font-weight-bold">
                                 {{ $item->name}}
+                                 </div>
                                 <div class="text-muted small">{{ $item->created_at}}</div>
                             </div>
                         </div>
@@ -59,4 +62,5 @@
         </div>
     </div>
     @endforeach
+    @endauth
 

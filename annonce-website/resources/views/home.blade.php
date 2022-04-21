@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-end">
     <div class="col-md-2 ">
-        <div class="card position-fixed" style="margin-top: 25px ;">
+        <div class="card position-fixed" >
             <div class="card-header">Categories</div>
             <div class="card-body ">
                 <ul class="list-group ">

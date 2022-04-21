@@ -2,7 +2,7 @@
 
 
 
-
+@auth
 
 <!doctype html>
 <html lang="en">
@@ -40,7 +40,7 @@
                             <div class="col-md-6">
                                 <select name="type" id=""
                                     class="form-select ">
-                                    <option disabled selected>Choose a category</option>
+                                    <option disabled selected >choose Categories</option>
                                         <option value="offre">
                                             offre
                                         </option>
@@ -107,3 +107,4 @@
 -->
 </body>
 </html>
+@endauth

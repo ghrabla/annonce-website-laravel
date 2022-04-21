@@ -27,6 +27,7 @@ Route::get('/', [AnounceController::class, 'index']);
 Route::delete('delete-anounce/{id}', [AnounceController::class, 'destroy']);
 Route::get('edit-anounce/{id}', [AnounceController::class, 'edit']);
 Route::put('update-anounce/{id}', [AnounceController::class, 'update']);
+// Route::post('search', [AnounceController::class,'search']);
 
 
 
